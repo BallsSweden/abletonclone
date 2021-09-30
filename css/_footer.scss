@@ -1,0 +1,168 @@
+.divider {
+	grid-column: 1 / -1;
+	grid-row: 14 / 15;
+
+	&__placer {
+		width: 100%;
+		height: min-content;
+		border-top: solid;
+		border-width: 0.2rem;
+		border-color: #eee;
+		margin-top: 12.7rem;
+	}
+}
+
+.footer {
+	grid-column: 2 / 12;
+	grid-row: 15 / 16;
+
+	height: min-content;
+
+	&__title {
+		padding-top: 10rem;
+	}
+}
+
+#footer__h1 {
+	color: $color-black;
+	font-size: 6rem;
+	letter-spacing: -0.2rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 30%) 40%;
+	grid-template-rows: min-content repeat(2, 1fr) min-content;
+	row-gap: 5rem;
+
+	width: 100%;
+
+	&__general {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+
+		&__social-icons-wrapper {
+			margin-top: 1rem;
+		}
+
+		&__social-icons {
+			height: 4rem;
+			width: 4rem;
+			margin-right: 0.75rem;
+
+			&__facebook {
+				fill: #3587f2;
+			}
+
+			&__twitter {
+				fill: #1db6f2;
+			}
+
+			&__youtube {
+				fill: #f20530;
+			}
+
+			&__instagram {
+				fill: #f26938;
+			}
+		}
+	}
+
+	&__education {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+	}
+
+	&__newsletter {
+		grid-column: 3 / 4;
+		grid-row: 2 / 3;
+
+		&-form {
+			height: 4rem;
+			display: flex;
+			justify-content: right;
+		}
+
+		&__input-email {
+			background-color: #eee;
+			border: none;
+			height: 100%;
+			margin-top: 1rem;
+			font-family: $font-primary;
+			font-size: 2rem;
+			padding-left: 1.5rem;
+			flex: 1;
+		}
+
+		&__input-submit {
+			background-color: $color-darkblue;
+			width: 20%;
+			border: none;
+			height: 100%;
+			margin-top: 1rem;
+			font-family: $font-primary;
+			font-size: 2rem;
+			color: #fff;
+		}
+	}
+
+	&__community {
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+	}
+
+	&__distributors {
+		grid-column: 2 / 3;
+		grid-row: 3 / 4;
+	}
+
+	&__language {
+		grid-column: 3 / 4;
+		grid-row: 3 / 4;
+
+		&-chooser {
+			height: 4rem;
+			width: 30%;
+			margin-top: 1rem;
+			background-color: #eee;
+			border: none;
+			font-family: $font-primary;
+			font-size: 2rem;
+			padding-left: 1rem;
+		}
+	}
+}
+
+.toes {
+	padding-top: 1rem;
+	margin-bottom: 10rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__left {
+		&__link-1 {
+			text-decoration: none;
+			font-weight: 500;
+			margin: 0;
+			color: #000;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__right {
+		&-logo {
+			width: 6rem;
+			height: 2.9rem;
+			margin: 0;
+			transform: translateY(.2rem);
+		}
+	}
+}
+
+.chicago {
+	font-size: 1.5rem;
+	margin-right: 2rem;
+	font-weight: 500;
+}
